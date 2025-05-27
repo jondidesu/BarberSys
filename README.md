@@ -9,7 +9,7 @@ Já imaginou ter um sistema simples, intuitivo e eficiente para gerenciar sua ba
 - Node.js
 - Express.js
 - MongoDB (com Mongoose)
-- Middleware de autenticação (provavelmente JWT)
+- Middleware de autenticação (JWT)
 - Uploads (imagem/arquivos)
 
 ### Frontend
