@@ -1,0 +1,125 @@
+/* Remove margens e paddings padrão do body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161717;
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+  font-family: 'Niramit', sans-serif;
+}
+
+/* Estilo principal da Navbar */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+  background-color: #161717;
+  color: white;
+  position: relative;
+  width: 100%; /* Garante que a navbar ocupe 100% da largura da viewport */
+  max-width: 100%; /* Evita que ultrapasse a largura da tela */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Linha branca na parte inferior */
+}
+
+/* Logo */
+.logo img {
+  height: 60px;
+}
+
+/* Links da navegação */
+.navlinks {
+  display: flex;
+  justify-content: space-between; /* Distribui os links uniformemente */
+  gap: 20px; /* Espaçamento entre os links */
+  width: auto; /* Permite que a largura seja ajustada conforme necessário */
+  max-width: 100%; /* Controle quanto da tela os links podem ocupar (ajuste este valor) */
+  margin: 0 auto; /* Centraliza os links horizontalmente */
+}
+
+.navlinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 15px; /* Adiciona espaçamento interno aos links */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.navlinks a:hover {
+  text-decoration: underline;
+}
+
+/* Ícones */
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons .icon {
+  font-size: 30px;
+  color: white;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navlinks {
+    justify-content: center; /* Centraliza os links */
+    gap: 1px; /* Reduz o espaçamento entre os links */
+  }
+
+  .navlinks a {
+    font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+}
+
+/* Responsividade para telas maiores que 768px (iPad e desktop) */
+@media (min-width: 768px) {
+  .Navbar {
+    flex-direction: row; /* Mantém o layout horizontal */
+    padding: 20px 55px;
+  }
+
+  .logo {
+    margin-right: 20px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .navlinks {
+    justify-content: space-between; /* Distribui os links uniformemente */
+    gap: 30px;
+        display: flex;
+    
+      
+  }
+
+  .icons {
+    margin-left: 10px;
+    gap: 10px;
+    margin-top: 0;
+  }
+}

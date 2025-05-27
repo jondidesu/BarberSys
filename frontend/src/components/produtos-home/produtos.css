@@ -1,0 +1,261 @@
+body, html {
+  background: #161717 !important; /* Ou a cor escura que preferir */
+}
+
+
+.icons_produtos {
+  margin-left: 100px;
+  justify-content: center;
+  gap:0px;
+  margin-top: 0px;
+}
+
+.icons_produtos2 {
+  margin-left: 0;
+  margin-right: 30px; /* ajuste conforme necessário */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+  margin-top: 80px;
+}
+
+
+.linha-decorativa {
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin-right: 20px;
+}
+
+.linha {
+  flex: 1;
+  height: 1px;
+  background-color: #fff;
+  max-width: 30%;
+}
+
+.pontos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.prod-container {
+  background: transparent !important;
+  width: 80%;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-left: 134px;
+}
+
+.prod-title {
+   justify-content: center;
+  align-items: center;
+  font-size: 65px;
+  margin-bottom: 60px;
+  color: aliceblue;
+  text-align: center;
+}	
+
+.prod-row {
+  display: flex;         /* Garante layout horizontal */
+  flex-direction: row;   /* Horizontal */
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;             /* Espaço entre as imagens */
+  padding: 0;
+  margin-left: 81px; /* Altere aqui para mudar o espaçamento entre as imagens */
+  flex-wrap: nowrap;
+}
+.prod-carousel-item {
+
+
+  gap: px;
+}
+
+
+.prod-img-wrapper {
+   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 280px; /* Tamanho desejado da imagem */
+  aspect-ratio: 3 /4; /* ou 1 / 1 para quadrado */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0px;
+  gap: 0px;
+}
+
+.prod-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+   object-fit: cover;
+}
+
+
+.prod-img-darken {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  transition: filter 0.4s ease;
+}
+
+.prod-img-wrapper:hover .prod-img-darken {
+  filter: brightness(100%);
+}
+
+.prod-img-text {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  color: rgb(254, 254, 254);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.4s ease;
+}
+
+.prod-img-wrapper:hover .prod-img-text {
+  color: #090909;
+}
+
+/* Botões personalizados */
+.prod-custom-control {
+  width: 50px;
+  height: 50px;
+  background: #fff !important;      /* Fundo branco */
+  border-radius: 50%;               /* Deixa redondo */
+  border: none;                     /* Sem borda extra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Sombra leve, opcional */
+  z-index: 2;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #090909;
+  filter: invert(0) !important;     /* Ícone escuro sobre fundo branco */
+  background-color: transparent !important;
+  width: 2rem;
+  height: 2rem;
+}
+
+.prod-carouselll-control-prev-icon,
+.prod-carouselll-control-next-icon {
+    color: #090909;
+  filter: invert(1); /* Deixa os ícones brancos */
+}
+
+@media (max-width: 900px) {
+
+  .icons_produtos img {
+   width: 50px;
+    height: 50px;
+  }	
+
+  .icons_produtos2 img {
+    margin-top: 0px;
+     width: 50px;
+    height: 50px;
+  }
+
+.icons_produtos {
+  margin-bottom: 0px; /* Ajuste para centralizar os ícones no mobile */
+    margin-left: 55px; /* Ajuste para centralizar os ícones no mobile */
+    margin-top: 20px; /* Ajuste para centralizar os ícones no mobile */
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .icons_produtos2 {
+   
+    margin-top: 25px; /* Ajuste para centralizar os ícones no mobile */
+  }
+
+.text-center {
+  margin-left: 13px;
+}
+
+.linha-decorativa {
+  
+  margin-left: 20px;
+}
+
+.pontos {
+    font-size: 25px; /* Altere aqui para mudar o tamanho dos pontos no mobile */
+  }	
+
+  .prod-container {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0px;
+    margin-bottom: 60px; /* Altere aqui para mudar margens do container no mobile */
+  }
+  .prod-title {
+    font-size: 32px; /* Altere aqui para mudar o tamanho do título no mobile */
+    margin-bottom: 24px;
+  }
+  .prod-row {
+    margin-left: 28px;
+    gap: 0px; /* Altere aqui para mudar o espaçamento entre as imagens no mobile */
+    flex-wrap: nowrap;
+  }
+  .prod-img-wrapper {
+    max-width: 100px; /* Altere aqui para mudar a largura máxima da imagem no mobile */
+    aspect-ratio: 4 / 6; /* Altere aqui para mudar a proporção da imagem (ex: 1/1 para quadrado) */
+    border-radius: 8px;
+  }
+  .prod-img-wrapper img,
+  .prod-img-darken {
+    width: 100%;
+    height: 100%;
+    min-width: 180px; /* Altere aqui para mudar o tamanho mínimo da imagem no mobile */
+    min-height: 180px; /* Altere aqui para mudar o tamanho mínimo da imagem no mobile */
+    max-width: 110px; /* Altere aqui para mudar o tamanho máximo da imagem no mobile */
+    max-height: 110px; /* Altere aqui para mudar o tamanho máximo da imagem no mobile */
+  }
+  .prod-img-text {
+    font-size: 0.7rem; /* Altere aqui para mudar o tamanho do texto sobre a imagem no mobile */
+    left: 6px;
+    bottom: 6px;
+  }
+  .prod-custom-control {
+    width: 36px; /* Altere aqui para mudar o tamanho dos botões do carrossel no mobile */
+    height: 36px; /* Altere aqui para mudar o tamanho dos botões do carrossel no mobile */
+    font-size: 1.2rem; /* Altere aqui para mudar o tamanho do ícone do botão no mobile */
+  }
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  background: transparent !important;
+}

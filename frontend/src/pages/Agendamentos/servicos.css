@@ -1,0 +1,36 @@
+
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.botoes button{
+    background: linear-gradient(to right, #FFCA98, #FF891B);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.botoes button:hover{
+    background: linear-gradient(to right, #FF891B, #FFCA98);
+    transition: 0.3s;
+}     
+.botoes button a{
+    text-decoration: none;
+    color: white;
+    
+}
