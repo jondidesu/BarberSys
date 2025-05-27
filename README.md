@@ -20,8 +20,28 @@ Já imaginou ter um sistema simples, intuitivo e eficiente para gerenciar sua ba
 ## 📁 Estrutura do Projeto
 
 ```
-backend/          # API RESTful com Node.js + MongoDB
-frontend/         # Aplicação React
+BarberSys/
+├── backend/
+│   ├── controllers/      # Lógica dos controladores
+│   ├── middlewares/      # Funções intermediárias (ex: autenticação)
+│   ├── models/           # Modelos de dados (ex: mongoose)
+│   ├── routes/           # Definições das rotas
+│   ├── uploads/          # Arquivos enviados (ex: fotos dos clientes)
+│   ├── .env              # Variáveis de ambiente
+│   ├── .gitignore
+│   ├── app.js            # Configuração principal do app Express
+│   ├── server.js         # Inicialização do servidor
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   └── sistema-barbearia/
+│       ├── public/       # Arquivos públicos (HTML, ícones)
+│       ├── src/          # Componentes, páginas e lógica do React
+│       ├── .gitignore
+│       ├── package.json
+│       ├── package-lock.json
+│       └── README.md
 ```
 
 ## 🔧 Funcionalidades
